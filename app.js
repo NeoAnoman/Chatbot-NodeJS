@@ -5,8 +5,8 @@ var readline = require('readline');
 var rl = readline.createInterface(process.stdin, process.stdout);
 rl.setPrompt('You ==> ');
 rl.prompt();
-rl.on('line', function(message) {
-    console.log('Bot ==> '+ Chatbot.ChatbotReply(message))
+rl.on('line',async function(message) {
+    console.log('Bot ==> '+ await Chatbot.ChatbotReply(message))
     rl.prompt();
 }).on('close',function(){
     process.exit(0);
