@@ -4,10 +4,10 @@ module.exports =
 	ChatbotReply:function(message)
 	{
 		// Bot's data
-		this.Bot_Age = 22;
-		this.Bot_Name = "Abdelrahman Radwan";
-		this.Bot_University = "Ain Shams University";
-		this.Bot_Country = "Egypt";
+		this.Bot_Age = 20;
+		this.Bot_Name = "Iris";
+		this.Bot_University = "JIIT Noida";
+		this.Bot_Country = "India";
 		// User data
 		this.User_Age;
 		this.User_Name;
@@ -29,7 +29,7 @@ module.exports =
 		}
 		else if(message.indexOf("where") > -1 && message.indexOf("live") && message.indexOf("you"))
 		{
-			return "I live in" + this.Bot_Country;
+			return "I live in " + this.Bot_Country;
 		}
 		return "Sorry, I didn't get it :( ";
 	}
